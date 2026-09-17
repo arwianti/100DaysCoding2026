@@ -1,11 +1,17 @@
-public class Day16.java{
-  public static void main(String[] args) {
+import java.util.Scanner;
 
-  int a = 17, n=5;
+public class Day16 {
 
-  int sisa = a%n;
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
 
-  System.out.println("sisa pembagian 17 oleh 5 adalah: " + sisa) ;
-
-  }
+        System.out.println("Masukkan total siswa:");
+        int siswa = input.nextInt();
+        System.out.println("Masukkan jumlah bus:");
+        int bus = input.nextInt();
+        int busPenuh = siswa / bus;
+        System.out.println("Jumlah bus yang dapat terisi penuh = " + busPenuh);
+        int sisa = siswa % bus;
+        System.out.println("Jumlah siswa yang tersisa = " + sisa);
+    }
 }
