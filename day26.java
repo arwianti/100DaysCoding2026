@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class dy26 {
+public class SoalTukarNilai {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
@@ -10,12 +10,11 @@ public class dy26 {
         System.out.print("Masukkan nilai b: ");
         int b = input.nextInt();
 
-        a = a + b;
-        b = a - b;
-        a = a - b;
+        int c = a;
+        a = b;
+        b = c;
 
-        System.out.println("Setelah ditukar:");
-        System.out.println("Nilai a = " + a);
-        System.out.println("Nilai b = " + b);
+        System.out.println("Nilai a setelah ditukar: " + a);
+        System.out.println("Nilai b setelah ditukar: " + b);
     }
 }
