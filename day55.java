@@ -1,4 +1,4 @@
-public class ContohKeyword {
+public class day55 {
 
     static int hitungJumlah() {
         int angka1 = 10;
